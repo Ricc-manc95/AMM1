@@ -1,0 +1,243 @@
+/*Imposto il colore del background*/
+body {
+    background-color:highlight;
+    }
+
+/*Imposto le caratteristiche del font per h1, h2, h3 e p*/
+h1 {
+    font-family: "Arial", Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100px;
+    color: darkblue;
+    }
+
+h2 {
+    font-family: "Arial", Times, serif;
+    color: darkblue;
+    }
+
+h3 {
+    font-family: "Arial", Times, serif;    
+    color: darkblue;
+    }
+
+p {
+    font-family: "Arial", Times, serif;
+    }
+
+/*Imposto le proprietà dei link*/    
+a:link {
+       font-family: "Arial", Times, serif; 
+        
+    }
+    
+a:visited {
+    color: blueviolet;
+         }
+    
+    
+a:hover, a:active {
+        color:red;
+        
+    }
+
+/*Impostazioni dell'header della tabella*/    
+th{
+    font-family: "Arial", Times, serif;
+    border-style: solid;
+    border-color:black;
+    color: white; 
+    }
+
+/*Impostazioni degli elementi della tabella*/    
+td{
+   font-family: "Arial", Times, serif;     
+   border-style: solid;
+   
+}  
+    
+/*Classe per le righe dispari */    
+.dispari{
+    background-color:#99B4D1;
+    text-align: center;
+    border-collapse: collapse;
+    }  
+
+/*Classe per le righe pari */    
+.pari{
+    background-color:initial; 
+    text-align: center;        
+    }    
+
+/*Classe per l'intestazione della tabella */    
+.intestazione{
+    background-color:cornflowerblue; 
+       
+    }
+
+/*Impostazioni della tabella*/    
+table{
+     border-collapse: collapse;
+     margin-left: auto; 
+     margin-right: auto;
+    
+    }    
+
+/*Imposto le caratteristiche del form*/    
+form{   
+    text-align: center;
+    font-family: "Arial", Times, serif;
+    font-size: 15px;
+} 
+
+/*Pseudo-elemento per utilizzare l'andata a capo*/
+label:after,label:before{
+        content: '\A';
+        white-space: pre;
+        height: 100px;
+}
+
+/*Impostazioni relative ai pulsanti*/
+button {
+    display:block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    background-color:cornflowerblue;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+/*Impostazioni relative all'acquisizione dell'input*/
+input{
+    height: 30px;
+    width: 300px;
+    border-color: blue;
+    border: 3px solid blue; 
+}
+
+/*Impostazioni relative all'acquisizione dell'input della casella di testo*/
+textarea{
+    height: 100px;
+    width: 300px;
+    border-color: blue;
+    border: 3px solid blue;
+}
+
+/*Pseudo-classi utili alla modifica dei campi di input*/ 
+input:focus{
+    padding-left: 5px;
+    font-size:15px;
+    color:black;
+    border: 3px solid darkcyan;
+}
+
+textarea:focus {
+    
+    padding-left: 5px;
+    font-size:15px;
+    color:black;
+    border: 3px solid darkcyan;
+}
+
+/*Creazione del footer*/
+footer{ 
+    width:100%;
+    background-color:cadetblue;
+    height:32px;
+    line-height:32px; 
+    text-align:center;
+    word-spacing: 5px;
+}   
+
+
+.foot{
+    margin-top: 10%;
+}
+
+/*Media query per le impostazioni degli schermi con grandezza massima 480px*/
+@media screen and (max-width:480px) { 
+    
+    table{
+        word-wrap:break-word;
+        table-layout:fixed;
+        width: 100%; 
+    }
+    
+    .img1{
+        display: none;
+    }
+    .invio{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+    
+    .pulsante2{
+       margin-top: 5px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: auto; 
+    }
+    
+    
+    img{max-width:100%; 
+        height:auto;}
+}
+
+/*Media query per le impostazioni degli schermi con una grandezza compresa tra i 481 px e i 1023px */
+@media only screen and (min-width:481px) and (max-width:1023px){
+    
+    .invio{
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+    
+    .pulsante2{
+       margin-top: 5px;
+       margin-bottom: auto;
+       padding-left: 2px;
+    }
+    
+    th{
+        width: 200px;
+        height: 200px;}
+    
+}
+
+/*Media query per le impostazioni degli schermi con grandezza minima 1024px*/
+@media only screen and (min-width:1024px) {
+  
+    header {
+        background-color: white;
+    }
+    
+    
+    header > h1 {
+        margin-left: 25%;
+        background-image: url('img/logo.jpg');
+        background-repeat: no-repeat; 
+        line-height: 120px;
+        text-align: center;
+        width: 739px;
+        height: 426px
+    }
+    
+    .content{
+        text-align: center;
+    }
+    
+    .sidebar_1{
+        margin-left: 5px;
+    }
+    th{
+        width: 200px;
+        height: 200px;}
+    
+}
