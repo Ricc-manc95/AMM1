@@ -1,0 +1,55 @@
+<%-- 
+    Document   : descrizione
+    Created on : 27-giu-2016, 11.54.59
+    Author     : Utente
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Titolo pagina-->
+        <title>Magliette online</title>
+        <!--Metainformazioni-->
+        <meta name ="author" content ="Riccardo Manca">
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/icona.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+        <!--Link esterni alle altre pagine-->
+        <li>
+            <a href="descrizione.html">Home page</a>
+        </li>    
+        <li>
+            <a href="cliente.html">Vedi articoli</a>
+        </li>
+        <li>
+            <a href="venditore.html">Nuova aggiunta articoli</a>
+        </li>
+            </ul>
+            
+        </nav>
+        <h2>Login R-shirt</h2>
+        
+        <p>Inserisci nome utente e password</p>
+        
+        <!--Form per il login-->
+        <form action="login.html" method="get">
+            <label for="nome_utente">Nome Utente</label>
+            <input type="text" name="nome_utente"
+                   id="nome_utente" />
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd"
+                   id="pswd" />
+            <!--Pulsante per inviare i dati del Login-->
+            <button class="invio" type="submit">Invia</button>
+        </form>
+        
+        <%@include file="footer.jsp" %>
+        
+    </body>
+</html>
